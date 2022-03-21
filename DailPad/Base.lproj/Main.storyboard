@@ -1,24 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dail Pad View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DailPadViewController" customModule="DailPad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfz-xc-5a3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLp-J5-hJQ">
+                                        <rect key="frame" x="10" y="70" width="394" height="148"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2022-02-27 at 11.50.07 PM (7)" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-IH-9Wo">
+                                                <rect key="frame" x="10" y="10" width="374" height="128"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="394" id="4SZ-pF-8I5"/>
+                                            <constraint firstAttribute="height" constant="148" id="6jU-8M-IoH"/>
+                                            <constraint firstAttribute="bottom" secondItem="bFz-IH-9Wo" secondAttribute="bottom" constant="10" id="7L2-4D-jhI"/>
+                                            <constraint firstItem="bFz-IH-9Wo" firstAttribute="leading" secondItem="xLp-J5-hJQ" secondAttribute="leading" constant="10" id="AJC-ab-3Lo"/>
+                                            <constraint firstAttribute="trailing" secondItem="bFz-IH-9Wo" secondAttribute="trailing" constant="10" id="EBg-XE-7FY"/>
+                                            <constraint firstItem="bFz-IH-9Wo" firstAttribute="top" secondItem="xLp-J5-hJQ" secondAttribute="top" constant="10" id="kH4-ge-dtC"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORA-EQ-bWb">
+                                        <rect key="frame" x="10" y="278.5" width="394" height="34"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eqo-Cm-lv7">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ekf-hO-4K0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbS-Kk-DrW">
+                                                        <rect key="frame" x="101" y="0.0" width="91" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aJW-Iq-bVW">
+                                                        <rect key="frame" x="202" y="0.0" width="91" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="psC-K9-fGg">
+                                                        <rect key="frame" x="303" y="0.0" width="91" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eqo-Cm-lv7" secondAttribute="trailing" id="77B-Wy-zYx"/>
+                                            <constraint firstItem="eqo-Cm-lv7" firstAttribute="top" secondItem="ORA-EQ-bWb" secondAttribute="top" id="Fdj-Zy-qGU"/>
+                                            <constraint firstAttribute="bottom" secondItem="eqo-Cm-lv7" secondAttribute="bottom" id="kLe-Fn-Snh"/>
+                                            <constraint firstItem="eqo-Cm-lv7" firstAttribute="leading" secondItem="ORA-EQ-bWb" secondAttribute="leading" id="uvc-59-6Vn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0la-hs-N7n">
+                                        <rect key="frame" x="10" y="362.5" width="394" height="414.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3RH-Dp-Xzg">
+                                                <rect key="frame" x="10" y="10" width="374" height="394.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sfA-XE-lH8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="83.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvL-k0-ge9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cL7-F9-mdE"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qr5-P0-zNZ">
+                                                                <rect key="frame" x="128" y="0.0" width="118" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtM-iC-CjO"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ET5-UC-ElZ">
+                                                                <rect key="frame" x="256" y="0.0" width="118" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6W-4K-mF2"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="76T-12-6ai">
+                                                        <rect key="frame" x="0.0" y="103.5" width="374" height="84"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnB-pK-Xj4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118" height="84"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xZ2-pT-TG1"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6na-Uk-YSC">
+                                                                <rect key="frame" x="128" y="0.0" width="118" height="84"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uck-gb-EMy"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32Y-7m-672">
+                                                                <rect key="frame" x="256" y="0.0" width="118" height="84"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EMi-5Q-JCI"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KxO-9J-vgW">
+                                                        <rect key="frame" x="0.0" y="207.5" width="374" height="83.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDX-Lq-vuV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="118" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKr-Ov-vlb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3f-wF-FsK">
+                                                                <rect key="frame" x="128" y="0.0" width="118" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdQ-Bd-ajz"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ak-FC-Ef2">
+                                                                <rect key="frame" x="256" y="0.0" width="118" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kq-mN-lsp"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bm1-N8-i8I">
+                                                        <rect key="frame" x="0.0" y="311" width="374" height="83.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLv-t5-XtN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="182" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="dailButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hy-SX-MOe"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCM-c0-IAb">
+                                                                <rect key="frame" x="192" y="0.0" width="182" height="83.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" image="delete.left" catalog="system">
+                                                                    <color key="titleColor" red="0.43137254899999999" green="0.38823529410000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rmt-vn-L9L"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="3RH-Dp-Xzg" secondAttribute="bottom" constant="10" id="Aao-aq-9zp"/>
+                                            <constraint firstItem="3RH-Dp-Xzg" firstAttribute="top" secondItem="0la-hs-N7n" secondAttribute="top" constant="10" id="Dwx-Il-h1x"/>
+                                            <constraint firstItem="3RH-Dp-Xzg" firstAttribute="leading" secondItem="0la-hs-N7n" secondAttribute="leading" constant="10" id="mh8-Mr-1z5"/>
+                                            <constraint firstAttribute="trailing" secondItem="3RH-Dp-Xzg" secondAttribute="trailing" constant="10" id="taN-NR-d9G"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emb-Et-Jyk">
+                                        <rect key="frame" x="0.0" y="218" width="414" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9C-zW-SxF">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="w9C-zW-SxF" secondAttribute="bottom" id="AZR-nw-tJp"/>
+                                            <constraint firstAttribute="trailing" secondItem="w9C-zW-SxF" secondAttribute="trailing" constant="10" id="mbI-LZ-TlU"/>
+                                            <constraint firstItem="w9C-zW-SxF" firstAttribute="top" secondItem="emb-Et-Jyk" secondAttribute="top" id="tu7-Qy-CoP"/>
+                                            <constraint firstItem="w9C-zW-SxF" firstAttribute="leading" secondItem="emb-Et-Jyk" secondAttribute="leading" constant="10" id="uPJ-60-xAi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="emb-Et-Jyk" firstAttribute="top" secondItem="xLp-J5-hJQ" secondAttribute="bottom" id="2oV-QJ-7Sd"/>
+                                    <constraint firstItem="xLp-J5-hJQ" firstAttribute="leading" secondItem="cfz-xc-5a3" secondAttribute="leading" constant="10" id="2q8-6W-F5n"/>
+                                    <constraint firstItem="emb-Et-Jyk" firstAttribute="leading" secondItem="cfz-xc-5a3" secondAttribute="leading" id="45G-RL-x5E"/>
+                                    <constraint firstItem="ORA-EQ-bWb" firstAttribute="top" secondItem="emb-Et-Jyk" secondAttribute="bottom" constant="40" id="4fD-qR-o1q"/>
+                                    <constraint firstItem="ORA-EQ-bWb" firstAttribute="leading" secondItem="cfz-xc-5a3" secondAttribute="leading" constant="10" id="OfB-ac-bpq"/>
+                                    <constraint firstItem="0la-hs-N7n" firstAttribute="leading" secondItem="cfz-xc-5a3" secondAttribute="leading" constant="10" id="OkT-eP-cVN"/>
+                                    <constraint firstAttribute="trailing" secondItem="xLp-J5-hJQ" secondAttribute="trailing" constant="10" id="TD3-0o-yxw"/>
+                                    <constraint firstAttribute="trailing" secondItem="emb-Et-Jyk" secondAttribute="trailing" id="Ve1-ZQ-pw8"/>
+                                    <constraint firstAttribute="trailing" secondItem="0la-hs-N7n" secondAttribute="trailing" constant="10" id="WDf-hx-Kn4"/>
+                                    <constraint firstItem="xLp-J5-hJQ" firstAttribute="top" secondItem="cfz-xc-5a3" secondAttribute="top" constant="70" id="pcm-In-vaz"/>
+                                    <constraint firstAttribute="trailing" secondItem="ORA-EQ-bWb" secondAttribute="trailing" constant="10" id="rbN-iK-aaq"/>
+                                    <constraint firstAttribute="bottom" secondItem="0la-hs-N7n" secondAttribute="bottom" constant="119" id="sYs-1U-wnU"/>
+                                    <constraint firstItem="0la-hs-N7n" firstAttribute="top" secondItem="ORA-EQ-bWb" secondAttribute="bottom" constant="50" id="tcC-Pb-dcX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cfz-xc-5a3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IdW-t8-oXo"/>
+                            <constraint firstItem="cfz-xc-5a3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NGE-XH-d7K"/>
+                            <constraint firstItem="cfz-xc-5a3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a6A-M2-rmx"/>
+                            <constraint firstAttribute="bottom" secondItem="cfz-xc-5a3" secondAttribute="bottom" id="wOI-lD-zB9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txt1" destination="ekf-hO-4K0" id="264-7s-BCm"/>
+                        <outlet property="txt2" destination="UbS-Kk-DrW" id="Xpd-t5-6N7"/>
+                        <outlet property="txt3" destination="aJW-Iq-bVW" id="fsw-OE-MbG"/>
+                        <outlet property="txt4" destination="psC-K9-fGg" id="wyD-OO-RAh"/>
+                        <outlet property="verifyTokenFromEmail" destination="w9C-zW-SxF" id="fx2-74-bRk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WhatsApp Image 2022-02-27 at 11.50.07 PM (7)" width="50" height="50"/>
+        <image name="delete.left" catalog="system" width="64" height="52"/>
+    </resources>
 </document>

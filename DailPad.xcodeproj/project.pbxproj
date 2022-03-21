@@ -13,6 +13,7 @@
 		CE2CF62827E8788A002D3944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2CF62627E8788A002D3944 /* Main.storyboard */; };
 		CE2CF62A27E87894002D3944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2CF62927E87894002D3944 /* Assets.xcassets */; };
 		CE2CF62D27E87894002D3944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2CF62B27E87894002D3944 /* LaunchScreen.storyboard */; };
+		CE2CF63527E87E59002D3944 /* DailPadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CF63427E87E59002D3944 /* DailPadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE2CF62927E87894002D3944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2CF62C27E87894002D3944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2CF62E27E87894002D3944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2CF63427E87E59002D3944 /* DailPadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailPadViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				CE2CF62927E87894002D3944 /* Assets.xcassets */,
 				CE2CF62B27E87894002D3944 /* LaunchScreen.storyboard */,
 				CE2CF62E27E87894002D3944 /* Info.plist */,
+				CE2CF63427E87E59002D3944 /* DailPadViewController.swift */,
 			);
 			path = DailPad;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2CF63527E87E59002D3944 /* DailPadViewController.swift in Sources */,
 				CE2CF62527E8788A002D3944 /* ViewController.swift in Sources */,
 				CE2CF62127E8788A002D3944 /* AppDelegate.swift in Sources */,
 				CE2CF62327E8788A002D3944 /* SceneDelegate.swift in Sources */,
